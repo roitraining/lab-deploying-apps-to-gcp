@@ -2,9 +2,10 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def main():
-    model = {"title":"Whatever you want."}
+    model = {"title": "Hello Build Trigger."}
     return render_template('index.html', model=model)
 
 
